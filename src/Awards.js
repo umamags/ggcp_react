@@ -1,10 +1,10 @@
-const Health = () => {
+const Awards = () => {
 
   return (
     <div className="home">
-    	Health
+    	Awards
     </div>
   );
 }
 
-export default Health;
+export default Awards;

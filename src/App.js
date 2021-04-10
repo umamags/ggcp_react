@@ -1,11 +1,17 @@
 import Header from './Header';
 import Navbar from './Navbar';
-import Mission from './Mission';
-import Health from './Health';
-import Education from './Education';
-import SeniorLiving from './SeniorLiving';
 import './App.css';
 import Home from './Home';
+import Intro from './Intro';
+import Org from './Org';
+import JoinUs from './JoinUs';
+import Awards from './Awards';
+import Report from './Report';
+import Newsletters from './Newsletters';
+import Projects from './Projects';
+import ContactUs from './ContactUs';
+import Test1 from './Test1';
+import Test3 from './Test3';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -19,17 +25,35 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/mission">
-              <Mission />
+            <Route path="/intro">
+              <Intro />
             </Route>
-            <Route path="/health">
-              <Health />
+            <Route path="/org">
+              <Org />
             </Route>
-            <Route path="/education">
-              <Education />
+            <Route path="/joinus">
+              <JoinUs />
             </Route>
-            <Route path="/seniorliving">
-              <SeniorLiving />
+            <Route path="/awards">
+              <Awards />
+            </Route>
+            <Route path="/report">
+              <Report />
+            </Route>
+            <Route path="/newsletters">
+              <Newsletters />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contactus">
+              <ContactUs />
+            </Route>
+            <Route path="/test1">
+              <Test1 />
+            </Route>
+            <Route path="/test3">
+              <Test3 />
             </Route>
           </Switch>
         </div>
