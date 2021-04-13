@@ -22,19 +22,6 @@ const Home = () => {
             <li>Educational Aid</li>
             <li>Skill Development</li>
         </ul>
-        <Container>
-          <Row>
-            <Col xs={6} md={4}>
-              <Image src="holder.js/171x180" rounded />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image src="holder.js/171x180" roundedCircle />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image src="holder.js/171x180" thumbnail />
-            </Col>
-          </Row>
-        </Container>
         <Carousel>
           <Carousel.Item>
             <img

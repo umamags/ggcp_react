@@ -1,5 +1,5 @@
 import Header from './Header';
-import Navbar from './Navbar';
+import NavigationBar from './NavigationBar';
 import './App.css';
 import Home from './Home';
 import Intro from './Intro';
@@ -19,7 +19,7 @@ function App() {
       <Router>
       <div className="App">
         <Header />
-        <Navbar />
+        <NavigationBar />
         <div className="content">
           <Switch>
             <Route exact path="/">
