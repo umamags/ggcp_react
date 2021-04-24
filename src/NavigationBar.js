@@ -13,18 +13,21 @@ const NavigationBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/intro">Intro</Nav.Link>
           <Nav.Link href="/org">Org</Nav.Link>
           <Nav.Link href="/joinus">Join Us</Nav.Link>
           <Nav.Link href="/awards">Awards</Nav.Link>
-          <Nav.Link href="/report">Report</Nav.Link>
-          <Nav.Link href="/contactus">Contact Us</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/beachcleaning">Beach Cleaning</NavDropdown.Item>
-            <NavDropdown.Item href="/healthclinic">Health Clinic</NavDropdown.Item>
-            <NavDropdown.Item href="/seniors">Seniors Homes</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Beach Cleaning</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Health Clinic</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Seniors Homes</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/education">Education</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Educational Aid</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Adopt a Village</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Building Compost</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="/projects">Feeding Dogs</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Train the trainers</NavDropdown.Item>
+            <NavDropdown.Item href="/projects">Tree Plantation</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Form inline>
