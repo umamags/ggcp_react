@@ -2,6 +2,7 @@
   "name": "ggcp_react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://umamags.github.io/ggcp_react",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.10",
