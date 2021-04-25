@@ -30,36 +30,28 @@ jobs:
         path: |
           **/node_modules
         key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
-        
+
     - name: Install dependencies
       run: npm install
 
     - name: Build
       run: npm run build
 
-    - name: Run the tests and generate coverage report
-      run: npm test -- --coverage
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-
-    name: 🚀 Deploy website on push
-    jobs:
-      web-deploy:
-        name: 🎉 Deploy
-        runs-on: ubuntu-latest
-        steps:
-        - name: 🚚 Get latest code
-          uses: actions/checkout@v2.3.2
-          with:
-            ref: gh-pages
-        
-        - name: 📂 Sync files
-          uses: SamKirkland/FTP-Deploy-Action@4.0.0
-          with:
-            server: ai-lab.in
-            username: fbmerf3ynq50
-            password: ${{ secrets.godaddy_ftp_password }}
-            server-dir: public_html/www/
+    - name: 🚀 Deploy website on push
+      jobs:
+        web-deploy:
+          name: 🎉 Deploy
+          runs-on: ubuntu-latest
+          steps:
+          - name: 🚚 Get latest code
+            uses: actions/checkout@v2.3.2
+            with:
+              ref: gh-pages
+          
+          - name: 📂 Sync files
+            uses: SamKirkland/FTP-Deploy-Action@4.0.0
+            with:
+              server: ai-lab.in
+              username: fbmerf3ynq50
+              password: ${{ secrets.godaddy_ftp_password }}
+              server-dir: public_html/www/
