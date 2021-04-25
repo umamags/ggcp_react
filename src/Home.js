@@ -8,7 +8,7 @@ const Home = () => {
     	<Breadcrumb>
 		  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
 		</Breadcrumb>
-    	<p>Welcome to Giants Group of Chennai Pushkar charitable trust</p>
+    	<p>Welcome to Giants Group of Chennai Pushkar charitable trust Home</p>
     	<p>We are the South Chennai chapter of the International Giants Organization</p>
     	<p>Our main objective is to carry, support, maintain, assist and promote Social Services and projects in India</p>
     	<p> Our main areas of focus are : </p>
