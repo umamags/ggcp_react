@@ -1,6 +1,5 @@
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Carousel from 'react-bootstrap/Carousel';
-import 'holderjs';
 
 const Home = () => {
 
