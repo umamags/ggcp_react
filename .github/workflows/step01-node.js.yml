@@ -56,3 +56,17 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
+
+    - name: 🚚 Get latest build
+      uses: actions/checkout@v2.3.2
+      with:
+        ref: gh-pages
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ai-lab.in
+        username: fbmerf3ynq50
+        password: ${{ secrets.godaddy_ftp_password }}
+        server-dir: public_html/ggcp2/
+
