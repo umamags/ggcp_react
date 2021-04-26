@@ -40,6 +40,5 @@ jobs:
         server: ai-lab.in
         username: fbmerf3ynq50
         password: ${{ secrets.godaddy_ftp_password }}
-        server-dir: public_html/ggcp2/
 
     
